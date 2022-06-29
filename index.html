@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customise HTML5 video player</title>
+    <link href="assets/style/app.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/script/app.js"></script>
+</head>
+<body>
+
+<body>
+<div class="m-container">
+    <div class="front-video-layer">
+        <div class="stack-center">
+            <video id="m_video_Player" class="tall-screen wide-screen" playsinline="" preload="" height="auto" autoplay muted="" width="auto" crossorigin="anonymous" onended="onVideoEnded()">
+                <track id="m_video_Player_sub_title" label="English" kind="captions" src="" srclang="en">
+            </video>
+            <div class="control-btn-div">
+                <div class="d-flex justify-content-between align-items-end flex-column bd-highlight h-100">
+                    <!--<button role="alert" class="btn btn-outline-dark">-->
+                    <!--<i class="fa-solid fa-font-awesome"></i>-->
+                    <!--<span class="d-none d-sm-inline">Report</span>-->
+                    <!--</button>-->
+                    <p></p>
+                    <div class="d-flex flex-column bd-highlight mn-t3">
+                        <button id="btn-prev" class="circle-btn btn btn-outline-dark btn-prev btn-hidden">
+                            <i class="fa-solid fa-angle-up"></i>
+                        </button>
+                        <button id="btn-next" class="circle-btn btn btn-outline-dark mt-2 mb-2 btn-next">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                    </div>
+                    <div class="d-flex flex-column bd-highlight">
+                        <button id="btn-mute" class="circle-btn btn btn-outline-dark btn-mute" title=Volume>
+                            <i id="mute" class="fa-solid fs-p75 fa-volume-xmark"></i>
+                        </button>
+                        <!--<input id="volume" type="range" class="vranger" value="0" />-->
+                    </div>
+                </div>
+            </div>
+            <div class="video-control-div">
+                <div class="controls">
+                    <button id="playPauseBtn" class="playPauseBtn" title=Play/Pause>
+                        <i class="fas fa-pause"></i>
+                    </button>
+                    <!--<button id="scrollBackwardBtn" class="playPauseBtn" title=Backward>-->
+                        <!--<i class="fa-solid fa-rotate-left"></i>-->
+                    <!--</button>-->
+                    <!--<button id="scrollForwardBtn" class="playPauseBtn" title=Forward onclick="skip(10)">-->
+                        <!--<i class="fa-solid fa-rotate-right"></i>-->
+                    <!--</button>-->
+                    <input id="slider" type="range" class="slider " value="0" />
+                    <p id="timer" class="timer">00:00</p>
+                    <p class="timer">/</p>
+                    <p id="duration" class="timer">00:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+
+<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+
+
+</body>
+</html>
